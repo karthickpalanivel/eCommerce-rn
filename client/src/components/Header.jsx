@@ -4,7 +4,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <View>
+    <View style={styles.appHeader}>
       <View style={styles.appIconContainer}>
         <Image source={require('../assets/apps.png')} style={styles.images} />
       </View>
@@ -16,6 +16,10 @@ const Header = () => {
 export default Header;
 
 const styles = StyleSheet.create({
+  appHeader:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
   images: {
     height: 28,
     width: 28,

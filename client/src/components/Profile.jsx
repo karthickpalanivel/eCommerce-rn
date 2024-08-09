@@ -2,9 +2,11 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import {Text, View} from 'react-native';
 import React from 'react';
-import {useState} from 'react';
+import { useState } from 'react';
 
-const [profilePic, setProfilePic] = useState({src: ''});
+
+const [profilePic, setProfilePic] = useState({src: ""});
+
 
 const Profile = () => {
   return (
@@ -15,3 +17,4 @@ const Profile = () => {
 };
 
 export default Profile;
+
